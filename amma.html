@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .carousel img {
+      object-fit: cover;
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel img {
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .carousel img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIr6c80x4Zq7Z5zF5l6yQK5JAXgL3Uxl9Ocd7D1rxNdQb8WHPf"
+          class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxjDItrspKHkZRBNYahC2HTwpYUf9ST4tnMqXTgjDhisJZlVBI"
+          class="d-block w-100" alt="Slide">
+            
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdnOBP15mo3H_RscTw3BYIP_SA95yDAPwRlVuzG2a-q3A7v0bK"
+          class="d-block w-100" alt="Slide 3">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUg2MnXZpWr1dx6quhsd5Ycc37GvRBlq0TqNzKZ1qbKUpHQuCt"
+          class="d-block w-100" alt="Slide 4">
+      </div>
+      
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</body>
+
+</html>
